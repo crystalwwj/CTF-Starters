@@ -6,6 +6,7 @@ Hope it helps other aspiring hackers in learning CTF!
 - [DuckLL](https://www.duckll.tw/2017/11/blog-post.html)
 - [How-to-play-ctf](https://github.com/ktecv2000/How-to-play-CTF?source=post_page---------------------------)
 - [CTF field guide](https://trailofbits.github.io/ctf/)
+- [CTF From Zero To One](https://speakerdeck.com/inndy/ctf-from-zero-to-one)
 
 #### Wargames and CTF sites
 - [22 Hacking Sites, CTFs and Wargames To Practice Your Hacking Skills](https://wheresmykeyboard.com/2016/07/hacking-sites-ctfs-wargames-practice-hacking-skills/)
