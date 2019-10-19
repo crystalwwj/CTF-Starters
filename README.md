@@ -32,3 +32,6 @@ Hope it helps other aspiring hackers in learning CTF!
 - HackCon19
 - TokyoWestern CTF
 - TrendMicro CTF
+- bsides delhi CTF
+- Balsn CTF
+
