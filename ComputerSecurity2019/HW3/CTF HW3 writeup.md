@@ -12,12 +12,12 @@ Topic: Web Security
 
 > There's nothing on the website except the animation, and we can't get any information from the source html. So we tried to changing the url to access some arbitrary files, such as `unexploitable.kaibro.tw/secret` and `unexploitable.kaibro.tw/flag`. Aha! We get 404 not found responses, but the response came from a github page. 
 
-![](src/404git)
+![](src/404git.png)
 
 > Then we tried searching for the challenge website in github and found a github repository named Bucharesti. Digging into the commit history we found a deleted file. That's our flag!
 
-![](src/gitrepo)
-![](src/gitflag)
+![](src/gitrepo.png)
+![](src/gitflag.png)
 
 
 ### Problem 2: Safe R/W 

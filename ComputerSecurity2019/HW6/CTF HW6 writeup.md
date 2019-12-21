@@ -18,4 +18,4 @@ Topic: Web Security
 3. We open the browserB and refresh the website. Get reverse shell!
 
 > src/url.py describes how we constructed our malicious payload. Basically it is
-![](src/payload)
+![](src/payload.png)
