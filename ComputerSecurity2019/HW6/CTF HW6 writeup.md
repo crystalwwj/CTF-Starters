@@ -1,4 +1,4 @@
-# CTF HW46Writeup
+# CTF HW6 Writeup
 
 Topic: Web Security
 
