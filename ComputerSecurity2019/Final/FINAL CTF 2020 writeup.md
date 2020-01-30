@@ -1,8 +1,8 @@
 # FINAL CTF 2020 writeup
 ### Team gimmemeat
-* B04901011 unicorn011 吳宛臻
-* R08942052 iamsteven  張政晏
-* R08921018 turtle25   林厚均
+* unicorn011
+* iamsteven
+* turtle25 
 
 Most of the challenges are done in coordinate effort. Both the solving process and writeup are results of thorough discussion and collaboration.
 
@@ -137,7 +137,7 @@ After completing a proof of work we enter a page where we can choose to invest $
 `FLAG{ponzi_scheme_fa_da_chai_$_$!!!}`
 
 ## Impossible
-solved by **unicorn011,iamsteven,turtle25**
+solved by **unicorn011, iamsteven, turtle25**
 This is a simple pwn challenge, with protections NX only. We are asked for an input `size`, then `size` is checked before we get to send our input.
 
 ### Solution
@@ -259,13 +259,10 @@ We know that the program runs with `libc2.29`, so freed memory will be managed b
 
 
 ### Solution
-We identified a vulnerability in the function `allocate()`. If we fill the data right up to the size of the block, we can create a off-by-one null byte injection.
-
-As far as we can tell, we cannot exploit use after free or double free because `rfree()` will set `ptr = NULL`.
-
-We also lack a way to leak information such as libc address becuase we cannot print out the contents of an allocated block.
-
-We don't know how to proceed from here. Without other major vulnerabilities, we can't even make use of the supposedly more unsafe (compared to fastbin) tcache mechanism.
+> We identified a vulnerability in the function `allocate()`. If we fill the data right up to the size of the block, we can create a off-by-one null byte injection.
+> As far as we can tell, we cannot exploit use after free or double free because `rfree()` will set `ptr = NULL`.
+> We also lack a way to leak information such as libc address becuase we cannot print out the contents of an allocated block.
+> We don't know how to proceed from here. Without other major vulnerabilities, we can't even make use of the supposedly more unsafe (compared to fastbin) tcache mechanism.
 
 ### Flag
 Not obtained.
