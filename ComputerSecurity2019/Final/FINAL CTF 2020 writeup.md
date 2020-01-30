@@ -30,6 +30,7 @@ After looking at tons of meaningless messages which happens to be the system rea
 
 ## H0W
 solved by **unicorn011, iamsteven**
+
 We get three files: a python bytecode file (pyc), a dynamically linked library file (.so), and an output file (txt). Run the pyc and we can see that it takes an input file and creates output.txt, so we can assume that the executable encodes or encrypts the input file in some way. Also, we can infer that the functions called by the python script should be stored in the terrynini.so file.
 
 ### Solution
@@ -99,6 +100,7 @@ After successfully solving this challenge, we noticed something really stupid. I
 
 ## VwVwVw
 solved by **iamsteven**
+
 We get a binary file: ./verify , usage: ./verify flag, **flag is a string not a file.
 
 ### Solution
@@ -122,6 +124,7 @@ We can get the result string from IDA(stored in text), and then reverse the stri
 `FLAG{7h1s15justAbase64enc0d3!}`
 ### Notes
 Although this is basic base64 encoding, the program doesn't take care of unprintable characters, so when we cannot just throw the discovered string into a base64 decoder and get flag.
+
 ## Ponzi Scheme
 solved by **unicorn011**
 
@@ -138,6 +141,7 @@ After completing a proof of work we enter a page where we can choose to invest $
 
 ## Impossible
 solved by **unicorn011, iamsteven, turtle25**
+
 This is a simple pwn challenge, with protections NX only. We are asked for an input `size`, then `size` is checked before we get to send our input.
 
 ### Solution
